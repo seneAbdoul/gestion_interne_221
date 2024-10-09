@@ -1,0 +1,28 @@
+.content-expanded {
+  margin-left: 14rem;
+}
+
+.content-collapsed {
+  margin-left: 4rem;
+}
+
+.sidebar-expanded {
+  width: 14rem;
+}
+
+.sidebar-collapsed {
+  width: 4rem;
+}
+
+.menu-text {
+  white-space: nowrap;
+}
+
+.sidebar-expanded .menu-item {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.sidebar-collapsed .menu-text {
+  display: none;
+}

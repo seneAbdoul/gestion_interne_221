@@ -1,0 +1,9 @@
+<div class="flex h-screen bg-gray-100 dark:bg-gray-900">
+  <app-sidebar [isExpanded]="isSidebarExpanded"></app-sidebar>
+  <div id="content" class="flex-1 flex flex-col" [class.content-expanded]="isSidebarExpanded" [class.content-collapsed]="!isSidebarExpanded">
+    <app-header (toggleSidebar)="toggleSidebar()"></app-header>
+    <main class="p-3">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

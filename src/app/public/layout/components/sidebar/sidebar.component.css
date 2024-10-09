@@ -1,0 +1,15 @@
+.sidebar-expanded {
+  width: 14rem;
+}
+
+.sidebar-collapsed {
+  width: 4rem;
+}
+
+.menu-text {
+  white-space: nowrap;
+}
+
+.sidebar-collapsed .menu-text {
+  display: none;
+}

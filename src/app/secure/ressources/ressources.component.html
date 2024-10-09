@@ -1,0 +1,83 @@
+<div class="flex justify-between items-center">
+  <h1
+      class="text-2xl font-bold text-[#C9151B]">Ressources</h1>
+  <div>
+      <p class="text-sm">Gestion Ressources / Classes &
+          Sous-classes</p>
+  </div>
+</div>
+<div class="flex mt-2 space-x-2">
+  <div class="bg-white p-1 shadow-md rounded-lg flex flex-col justify-between min-h-[80px] h-[80px] w-1/6" routerLink="/ressources/anneeScolaire">
+      <div class="flex justify-between items-start">
+          <div>
+              <i class="fas fa-folder text-[#C9151B] text-3xl"></i>
+          </div>
+          <div class="text-gray-400">
+              <i class="fa-solid fa-ellipsis-vertical text-[#C9151B]"></i>
+          </div>
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+          <h3 class="text-[#C9151B] text-sm">Annee</h3>
+          <p class="text-xs text-gray-500">Décembre 2020</p>
+      </div>
+  </div>
+
+  <div class="bg-white p-1 shadow-md rounded-lg flex flex-col justify-between min-h-[80px] h-[80px] w-1/7" routerLink="/ressources/domaineSpecialite">
+      <div class="flex justify-between items-start">
+          <div>
+              <i class="fas fa-book text-[#C9151B] text-3xl"></i>
+          </div>
+          <div class="text-gray-400">
+              <i class="fa-solid fa-ellipsis-vertical text-[#C9151B]"></i>
+          </div>
+      </div>
+      <div class="flex-grow flex items-end">
+          <h3 class="text-[#C9151B] text-sm">Domaines & Spécialités</h3>
+      </div>
+  </div>
+
+  <div class="bg-white p-1 shadow-md rounded-lg flex flex-col justify-between min-h-[80px] h-[80px] w-1/7" routerLink="/ressources/classes">
+      <div class="flex justify-between items-start">
+          <div>
+              <i class="fas fa-clipboard text-[#C9151B] text-3xl"></i>
+          </div>
+          <div class="text-gray-400">
+              <i class="fa-solid fa-ellipsis-vertical text-[#C9151B]"></i>
+          </div>
+      </div>
+      <div class="flex-grow flex items-end">
+          <h3 class="text-[#C9151B] text-sm">Classes & Sous-Classe</h3>
+      </div>
+  </div>
+
+  <div class="bg-white p-1 shadow-md rounded-lg flex flex-col justify-between min-h-[80px] h-[80px] w-1/7" routerLink="/ressources/ueModule">
+      <div class="flex justify-between items-start">
+          <div>
+              <i class="fas fa-folder text-[#C9151B] text-3xl"></i>
+          </div>
+          <div class="text-gray-400">
+              <i class="fa-solid fa-ellipsis-vertical text-[#C9151B]"></i>
+          </div>
+      </div>
+      <div class="flex-grow flex items-end">
+          <h3 class="text-[#C9151B] text-sm">UE & Modules</h3>
+      </div>
+  </div>
+
+  <div class="bg-white p-1 shadow-md rounded-lg flex flex-col justify-between min-h-[80px] h-[80px] w-1/7" routerLink="/ressources/parametre">
+      <div class="flex justify-between items-start">
+          <div>
+              <i class="fas fa-folder text-[#C9151B] text-3xl"></i>
+          </div>
+          <div class="text-gray-400">
+              <i class="fa-solid fa-ellipsis-vertical text-[#C9151B]"></i>
+          </div>
+      </div>
+      <div class="flex-grow flex items-end">
+          <h3 class="text-[#C9151B] text-sm">Parametres</h3>
+      </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
