@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-domaine-specialite',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./domaine-specialite.component.css']
 })
 export class DomaineSpecialiteComponent {
+  constructor(private router: Router) {}
 
+  isActive(path: string): boolean {
+    return this.router.url === path;
+  }
 }

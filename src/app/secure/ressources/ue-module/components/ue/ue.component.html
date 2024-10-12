@@ -1,0 +1,77 @@
+<app-ue-module></app-ue-module>
+<div class="bg-gray-50 p-3 rounded-md">
+  <div class="flex mt-1 bg-white shadow-lg p-3">
+      <div class="flex">
+          <select
+          class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md">
+          <option>Choisir le domaine</option>
+      </select>
+          <input type="text" placeholder="Domaine" class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md ml-2" />
+          <input type="text" placeholder="U.E (Unité d’enseignement)" class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md ml-2" />
+          <button class="bg-[#C9151B] text-white px-3 py-1 rounded-md ml-4">Créer</button>
+      </div>
+  </div>
+
+
+  <div class="overflow-x-auto mt-2">
+      <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+          <thead class="bg-gray-50">
+              <tr>
+                  <th class="text-left py-2 px-2 text-red-600">Code</th>
+                  <th class="text-left py-2 px-2 text-red-600">U.E (Unité d’enseignement)</th>
+                  <th class="text-left py-2 px-2 text-red-600">Mention</th>
+                  <th class="text-left py-2 px-2 text-red-600">État</th>
+                  <th class="text-center py-2 px-2 text-red-600">Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="border-b hover:bg-gray-100 transition duration-150">
+                  <td class="p-2 text-sm">UE-DB1</td>
+                  <td class="p-2 text-sm">Licence 1 Développement Web/Mobile</td>
+                  <td class="p-2 text-sm">Web/Mobile</td>
+                  <td class="p-2 text-sm">
+                      <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">
+                          Actif
+                      </span>
+                  </td>
+                  <td class="p-2 text-center">
+                      <i class="fa-solid fa-ellipsis text-[#C9151B] cursor-pointer"></i>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="flex justify-between mt-4">
+      <select class="p-1 border border-gray-300 rounded-md">
+          <option>3 éléments / page</option>
+          <option>5 éléments / page</option>
+      </select>
+      <div class="flex space-x-2">
+          <nav aria-label="Page navigation example">
+              <ul class="inline-flex -space-x-px text-sm">
+                  <li>
+                      <a href="#"
+                          class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                          < </a>
+                  </li>
+                  <li>
+                      <a href="#"
+                          class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-[#B89A53]">1</a>
+                  </li>
+                  <li>
+                      <a href="#"
+                          class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                  </li>
+                  <li>
+                      <a href="#"
+                          class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                          > </a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</div>
