@@ -1,0 +1,216 @@
+<div class="p-6 bg-gray-100 flex flex-col space-y-2">
+    <h1 class="text-[#C9151B]  font-bold">Liste Des Etudiants <span class="text-[#B89A53] font-bold">(23)</span></h1>
+    <div class="flex justify-between "> 
+        <button class="px-2 block w-auto h-10 bg-[#000000]  rounded-lg shadow hover:bg-yellow-400 text-white font-bold">
+            Telecharger un Fichier Model
+            <i class="fas fa-download ml-4"></i>
+        </button> 
+        <button class="px-2 block mr-96 w-auto h-10 bg-[#000000]  rounded-lg shadow hover:bg-yellow-400 text-white font-bold">
+            Importer Le Fichier
+            <i class="fas fa-upload ml-4"></i>
+        </button> 
+        <button class="px-2 block w-auto h-10 bg-[#C9151B]  rounded-lg shadow hover:bg-yellow-400 text-white font-bold">
+            Inscription/Reinscription
+            <i class="fas fa-user ml-4"></i>
+        </button>
+    </div>
+
+    <div class="bg-white h-16 flex justify-between items-center rounded-lg shadow-lg">
+        <div class="flex justify-around">
+          <div class="flex space-x-4 ml-2">
+            <h2 class="font-bold mt-4">Apprenants/Pages</h2>
+            <!-- Select Dropdown -->
+            <select id="elementsPerPage" class="border border-gray-300 p-2 rounded-md h-10 mt-2">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+            </select>
+            <select class="border border-gray-300 p-2 rounded-md h-10 mt-2">
+              <option value="">Filtrer Par Classe</option>
+              <!-- Add options dynamically -->
+            </select>
+            <select class="border border-gray-300 p-2 rounded-md h-10 mt-2">
+              <option value="">Filtrer Par Statut</option>
+              <!-- Add options dynamically -->
+            </select>
+          </div>
+          <div class="flex items-center border border-gray-300 rounded-lg ml-96">
+            <input 
+                type="text" 
+                placeholder="Rechercher..." 
+                class="p-2 w-full rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <button class="p-2  text-black rounded-r-lg hover:bg-blue-600">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    <!-- Fin partie recherche-->
+
+     <!-- parti tableau-->
+    <div class=" flex justify-between items-center">
+      <!-- Modules Table -->
+      <table class="w-full text-left border-collapse">
+        <thead class="bg-white rounded-lg shadow-lg">
+            <tr class="text-gray-700">
+                <th class="p-2 border">Photo</th>
+                <th class="p-2 border">Nom Complet</th>
+                <th class="p-2 border">Grade</th>
+                <th class="p-2 border">Telephone</th>
+                <th class="p-2 border">Email</th>
+                <th class="p-2 border">Nombre Heure Effectuer</th>
+                <th class="p-2 border">Statut</th>
+                <th class="p-2 border">Action</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white">
+            <tr>
+                <td class="p-2 border">                            
+                 <div class="flex items-center">
+                    <img src="signbi.jpeg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-red-500" />
+                  </div>
+                </td>
+                <td class="p-2 border">Abdou Sene</td>
+                <td class="p-2 border">Professeur Universitaire</td>
+                <td class="p-2 border">764830745</td>
+                <td class="p-2 border">signbisene-gmail.com</td>
+                <td class="p-2 border">173h</td>
+                <td class="p-2 border">
+                    <button class="px-2 w-24  h-6 bg-[#5DFF88] text-[#242B5A] rounded-lg shadow hover:bg-yellow">
+                        Actif
+                    </button>
+                </td>
+                <td class="p-2 border">
+                    <button class="text-blue px-2 py-1 h-6 ml-4 w-8 rounded-lg shadow-lg bg-white">
+                        <i class="fa-solid fa-ellipsis mt-1 text-[#C9151B]"></i>
+                     </button>
+                </td>
+            </tr> 
+            <tr>
+                <td class="p-2 border">                            
+                 <div class="flex items-center">
+                    <img src="signbi.jpeg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-red-500" />
+                  </div>
+                </td>
+                <td class="p-2 border">Abdou Sene</td>
+                <td class="p-2 border">Professeur Universitaire</td>
+                <td class="p-2 border">764830745</td>
+                <td class="p-2 border">signbisene-gmail.com</td>
+                <td class="p-2 border">173h</td>
+                <td class="p-2 border">
+                    <button class="px-2 w-24  h-6 bg-[#5DFF88] text-[#242B5A] rounded-lg shadow hover:bg-yellow">
+                        Actif
+                    </button>
+                </td>
+                <td class="p-2 border">
+                    <button class="text-blue px-2 py-1 h-6 ml-4 w-8 rounded-lg shadow-lg bg-white">
+                        <i class="fa-solid fa-ellipsis mt-1 text-[#C9151B]"></i>
+                     </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border">                            
+                 <div class="flex items-center">
+                    <img src="signbi.jpeg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-red-500" />
+                  </div>
+                </td>
+                <td class="p-2 border">Abdou Sene</td>
+                <td class="p-2 border">Professeur Universitaire</td>
+                <td class="p-2 border">764830745</td>
+                <td class="p-2 border">signbisene-gmail.com</td>
+                <td class="p-2 border">173h</td>
+                <td class="p-2 border">
+                    <button class="px-2 w-24  h-6 bg-[#5DFF88] text-[#242B5A] rounded-lg shadow hover:bg-yellow">
+                        Actif
+                    </button>
+                </td>
+                <td class="p-2 border">
+                    <button class="text-blue px-2 py-1 h-6 ml-4 w-8 rounded-lg shadow-lg bg-white">
+                        <i class="fa-solid fa-ellipsis mt-1 text-[#C9151B]"></i>
+                     </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border">                            
+                 <div class="flex items-center">
+                    <img src="signbi.jpeg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-red-500" />
+                  </div>
+                </td>
+                <td class="p-2 border">Abdou Sene</td>
+                <td class="p-2 border">Professeur Universitaire</td>
+                <td class="p-2 border">764830745</td>
+                <td class="p-2 border">signbisene-gmail.com</td>
+                <td class="p-2 border">173h</td>
+                <td class="p-2 border">
+                    <button class="px-2 w-24  h-6 bg-[#5DFF88] text-[#242B5A] rounded-lg shadow hover:bg-yellow">
+                        Actif
+                    </button>
+                </td>
+                <td class="p-2 border">
+                    <button class="text-blue px-2 py-1 h-6 ml-4 w-8 rounded-lg shadow-lg bg-white">
+                        <i class="fa-solid fa-ellipsis mt-1 text-[#C9151B]"></i>
+                     </button>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-2 border">                            
+                 <div class="flex items-center">
+                    <img src="signbi.jpeg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-red-500" />
+                  </div>
+                </td>
+                <td class="p-2 border">Abdou Sene</td>
+                <td class="p-2 border">Professeur Universitaire</td>
+                <td class="p-2 border">764830745</td>
+                <td class="p-2 border">signbisene-gmail.com</td>
+                <td class="p-2 border">173h</td>
+                <td class="p-2 border">
+                    <button class="px-2 w-24  h-6 bg-[#5DFF88] text-[#242B5A] rounded-lg shadow hover:bg-yellow">
+                        Actif
+                    </button>
+                </td>
+                <td class="p-2 border">
+                    <button class="text-blue px-2 py-1 h-6 ml-4 w-8 rounded-lg shadow-lg bg-white">
+                        <i class="fa-solid fa-ellipsis mt-1 text-[#C9151B]"></i>
+                     </button>
+                </td>
+            </tr>   
+        </tbody>
+    </table>
+    
+    
+    </div>
+    <!--fin partie Tableau -->
+
+     <!-- Paggination -->
+    <div class="flex items-center space-x-2 justify-between">
+        <div class="flex items-center space-x-2">
+            <h2>1 à 10 apprenants pour 142</h2>
+          </div>
+        <!-- Previous Button -->
+         <div>
+            <button class="text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.707 14.707a1 1 0 010-1.414L9.414 10l3.293-3.293a1 1 0 10-1.414-1.414l-4 4a1 1 0 000 1.414l4 4a1 1 0 001.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            
+              <!-- Page Numbers -->
+              <button class="w-8 h-8 bg-[#B59A07] text-white rounded-md">1</button>
+              <button class="w-8 h-8 text-gray-500 hover:bg-gray-200 rounded-md">2</button>
+              <button class="w-8 h-8 text-gray-500 hover:bg-gray-200 rounded-md">3</button>
+              <button class="w-8 h-8 text-gray-500 hover:bg-gray-200 rounded-md">4</button>
+            
+              <!-- Next Button -->
+              <button class="text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+         </div>
+
+      </div>
+     <!-- fin Paggination --> 
+
+  </div>
