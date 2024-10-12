@@ -14,6 +14,9 @@ import { RessourcesModule } from '../ressources.module';
     CommonModule,
     DomaineSpecialiteRoutingModule,
     RessourcesModule
+  ],
+  exports:[
+    DomaineSpecialiteComponent
   ]
 })
 export class DomaineSpecialiteModule { }

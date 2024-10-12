@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { RessourcesComponent } from './ressources.component';
 
 const routes: Routes = [
-  { path: '', component: RessourcesComponent },
+  { path: '', redirectTo: 'anneeScolaire', pathMatch: 'full' },
   { path: 'classes', loadChildren: () => import('./classes/classes.module').then(m => m.ClassesModule) },
   { path: 'anneeScolaire', loadChildren: () => import('./annee-scolaire/annee-scolaire.module').then(m => m.AnneeScolaireModule) },
   { path: 'domaineSpecialite', loadChildren: () => import('./domaine-specialite/domaine-specialite.module').then(m => m.DomaineSpecialiteModule) },

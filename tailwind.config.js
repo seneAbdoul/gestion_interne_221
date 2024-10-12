@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'rouge': '#C9151B',
+        'beige': '#B89A53',
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin')

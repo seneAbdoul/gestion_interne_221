@@ -14,6 +14,9 @@ import { RessourcesModule } from '../ressources.module';
     CommonModule,
     UeModuleRoutingModule,
     RessourcesModule
+  ],
+  exports:[
+    UeModuleComponent
   ]
 })
 export class UeModuleModule { }
